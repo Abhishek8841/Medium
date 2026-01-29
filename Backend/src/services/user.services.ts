@@ -1,5 +1,4 @@
-import { PrismaClient } from "@prisma/client";
-const prisma = new PrismaClient();
+import { prisma } from '../lib/prisma.js'
 import { type signInType, type signUpType, signInSchema, signUpSchema } from "@kehsihba_dev/medium-common";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";

@@ -1,7 +1,5 @@
-import { PrismaClient } from "@prisma/client";
+import { prisma } from '../lib/prisma.js'
 import type { editBlogType, newBlogType } from "@kehsihba_dev/medium-common";
-
-const prisma = new PrismaClient();
 
 export const bulkBlogService = async () => {
     return await prisma.blog.findMany({

@@ -1,7 +1,7 @@
-import { Prisma } from "@prisma/client";
 import { type Request, type Response, type NextFunction } from "express";
 import { ZodError } from "zod";
 import jwt from "jsonwebtoken";
+import { Prisma } from "../generated/prisma/client.js";
 
 export function globalErrorHandler(
     err: unknown,
